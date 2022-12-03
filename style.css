@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(0, 0%, 98%);
+  font-family: "Epilogue", sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+  min-height: 100vh;
+  font-weight: 400;
+  padding: 30px 40px;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar {
+  display: flex;
+  height: 50px;
+}
+
+.nav-container li {
+  list-style: none;
+  margin-right: 50px;
+}
+
+.nav-container a {
+  color: hsl(0, 0%, 41%);
+  text-decoration: none;
+}
+
+.nav-container a:hover {
+  color: hsl(0, 0%, 8%);
+}
+
+.navbar2 {
+  padding-top: 19px;
+}
+
+.nav-container .navbar2 {
+  font-size: 15px;
+  display: flex;
+}
+
+.logo {
+  margin-right: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.selector,
+.selector2 {
+  margin-right: 50px;
+  position: sticky;
+  width: 150px;
+}
+
+#selectField,
+#selectField2 {
+  width: 100%;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  color: hsl(0, 0%, 41%);
+}
+
+#selectField img,
+#selectField2 img {
+  width: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  transition: transform 0.5s;
+}
+
+#selectText:hover,
+#selectText2:hover {
+  color: hsl(0, 0%, 8%);
+}
+
+#list,
+#list2 {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.options,
+.options2 {
+  width: 100%;
+  background: rgba(219, 215, 215, 0.9);
+  padding: 15px 0 15px 50px;
+  list-style: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.options p,
+.options2 p {
+  background: rgba(219, 215, 215, 0.9);
+  color: hsl(0, 0%, 41%);
+}
+
+.options img {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.7);
+  top: 12px;
+  left: 15px;
+}
+
+.hide,
+.hide2 {
+  visibility: hidden;
+}
+
+.rotate,
+.rotate2 {
+  transform: rotate(180deg);
+}
+
+.log-in a {
+  color: hsl(0, 0%, 41%);
+}
+
+.log-in .logIn {
+  color: hsl(0, 0%, 41%);
+  margin-right: 50px;
+}
+
+.log-in .btn {
+  cursor: pointer;
+  padding: 12.5px 25px;
+  border: 1px solid hsl(0, 0%, 41%);
+  border-radius: 10px;
+}
+
+.btn:hover {
+  border: 1px solid hsl(0, 0%, 8%);
+}
+
+.hero {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-hero {
+  margin: 50px;
+}
+
+.hero-details {
+  margin: 60px;
+}
+
+.hero-details h1 {
+  font-size: 5rem;
+}
+
+.hero-details p {
+  width: 450px;
+  padding-top: 50px;
+  color: hsl(0, 0%, 41%);
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.hero-details button {
+  padding: 20px 30px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: hsl(0, 0%, 98%);
+  border: none;
+  border-radius: 15px;
+  background-color: hsl(0, 0%, 8%);
+}
+
+button:hover {
+  border: 1px solid hsl(0, 0%, 8%);
+  cursor: pointer;
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 8%);
+}
+
+.svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg img {
+  margin-right: 50px;
+}
+
+.hero-images .desktop-images {
+  height: 550px;
+  margin-right: 100px;
+}
+
+.hero-images .mobile-images {
+  display: none;
+}
+
+@media (max-width: 375px) {
+  .navbar {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-details h1 {
+    position: absolute;
+    bottom: 225px;
+    left: 10px;
+    font-size: 2.2rem;
+    z-index: 1;
+    width: 100%;
+  }
+
+  .hero-details p {
+    font-size: 18px;
+    word-spacing: 5px;
+    position: absolute;
+    text-align: center;
+    bottom: 80px;
+    left: -1px;
+    width: 100%;
+  }
+
+  .hero-details button {
+    position: absolute;
+    bottom: 40px;
+    left: 25%;
+  }
+
+  .svg {
+    position: absolute;
+    width: 100%;
+    bottom: -50px;
+    left: 30px;
+  }
+
+  .svg img {
+    margin-right: 20px;
+    width: 60px;
+  }
+
+  .main-hero .hero-details {
+    width: 100%;
+  }
+
+  .hero-images .desktop-images {
+    display: none;
+  }
+
+  .hero-images .mobile-images {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    display: block;
+    width: 100%;
+  }
+}

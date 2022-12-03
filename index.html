@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <header class="container">
+      <div class="nav-container">
+        <div class="navbar">
+          <div class="logo">
+            <img src="images/logo.svg" alt="logo" />
+          </div>
+
+          <div class="selector">
+            <div id="selectField">
+              <p id="selectText">Features</p>
+              <img src="images/icon-arrow-down.svg" id="arrowIcon" />
+            </div>
+
+            <ul id="list" class="hide">
+              <li class="options">
+                <img src="images/icon-todo.svg" />
+                <p>Todo list</p>
+              </li>
+              <li class="options">
+                <img src="images/icon-calendar.svg" />
+                <p>Calendar</p>
+              </li>
+              <li class="options">
+                <img src="images/icon-reminders.svg" />
+                <p>Reminders</p>
+              </li>
+              <li class="options">
+                <img src="images/icon-planning.svg" />
+                <p>Planning</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="selector2">
+            <div id="selectField2">
+              <p id="selectText2">Company</p>
+              <img src="images/icon-arrow-down.svg" id="arrowIcon2" />
+            </div>
+
+            <ul id="list2" class="hide2">
+              <li class="options2">
+                <p>History</p>
+              </li>
+              <li class="options2">
+                <p>Our Team</p>
+              </li>
+              <li class="options2">
+                <p>Blog</p>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar2">
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About</a></li>
+          </div>
+        </div>
+
+        <div class="log-in">
+          <a href="#" class="logIn">Login</a>
+          <button class="btn"><a href="#">Register</a></button>
+        </div>
+      </div>
+
+      <div class="hero">
+        <div class="main-hero">
+          <div class="hero-details">
+            <h1>Make remote work</h1>
+            <p>
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <button>Learn more</button>
+          </div>
+          <div class="svg">
+            <img src="images/client-databiz.svg" />
+            <img src="images/client-audiophile.svg" />
+            <img src="images/client-meet.svg" />
+            <img src="images/client-maker.svg" />
+          </div>
+        </div>
+        <div class="hero-images">
+          <img
+            class="desktop-images"
+            src="images/image-hero-desktop.png"
+            alt="desktop-images"
+          />
+          <img
+            class="mobile-images"
+            src="images/image-hero-mobile.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </header>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Raven Valdeviso</a>.
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
